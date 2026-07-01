@@ -1,0 +1,17 @@
+# Raw competition data should be tracked by DVC, not Git
+data/raw/
+
+# Local outputs and MLflow database/artifacts
+artifacts/
+mlflow_tracking/
+mlruns/
+
+# Python/cache/system files
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+*.pkl
+*.joblib
+
+# OS files
+.DS_Store
