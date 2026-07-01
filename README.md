@@ -21,10 +21,11 @@ The best model selected by holdout validation was:
 
 The raw CSV files are tracked with DVC and are not stored directly in GitHub.
 
-To reproduce the data locally after cloning the repository:
+To reproduce the data locally after cloning the repository in Colab, mount Google Drive, make sure the DVC remote folder is available at `/content/drive/MyDrive/FITE_DVC_REMOTE`, then run:
 
 ```bash
-pip install dvc dvc-gdrive
+pip install dvc
 dvc pull
+```
 
-This downloads the dataset from the configured Google Drive DVC remote using the .dvc tracking file.
+This downloads the dataset from the configured DVC remote using the .dvc tracking file.
